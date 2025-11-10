@@ -7,11 +7,12 @@ body {
 }
 
 header {
-  background-color: #87CEEB; /* Sky blue */
+  background-color: #808080; /* Standard Grey */
   color: white;
   padding: 1rem;
   text-align: center;
 }
+
 
 
 nav a {
@@ -57,4 +58,5 @@ footer {
   bottom: 0;
   width: 100%;
   bord
+
 
