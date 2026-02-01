@@ -1,62 +1,92 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background-color: #fffaf0;   /* Light cream background */
-  color: #222222;              /* Dark text for good readability */
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  background-color: #808080; /* Standard Grey */
+body {
+  background: #f4f4f4;
+}
+
+/* HEADER */
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 40px;
+  background: #111;
   color: white;
-  padding: 1rem;
-  text-align: center;
 }
 
-
-
-nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.logo {
+  width: 70px;
+  margin-right: 15px;
 }
 
-.container {
-  padding: 2rem;
-  text-align: center;
-  background-color: #ffffff;   /* White card section on cream background */
-  margin: 2rem auto;
-  max-width: 900px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 64, 128, 0.1);
-}
-
-.next-button, .back-button {
-  background-color: #004080;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1rem;
-  margin: 10px;
-  display: inline-block;
-  transition: 0.3s ease;
-}
-
-.next-button:hover, .back-button:hover {
-  background-color: #0066cc;
-}
-
-footer {
-  background-color: #f9f6ee;   /* Slightly lighter cream for footer */
-  color: #333333;
-  text-align: center;
-  padding: 1rem;
+/* HERO IMAGE */
+.hero {
+  height: 420px;
+  background: url("hero-bg.jpg") center/cover no-repeat;
   position: relative;
-  bottom: 0;
-  width: 100%;
-  bord
+}
 
+.hero-box {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  max-width: 600px;
+  color: white;
+}
 
+.hero-box h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* THREE COLUMN SECTION */
+.three-cols {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background: white;
+  padding: 60px 40px;
+}
+
+.col {
+  width: 260px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.nav-buttons {
+  text-align: center;
+  margin: 40px;
+}
+
+.next, .back {
+  background: #004080;
+  color: white;
+  padding: 10px 22px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.next:hover, .back:hover {
+  background: #002f5f;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+}
