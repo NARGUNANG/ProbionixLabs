@@ -9,7 +9,7 @@ body {
   background: #f4f4f4;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .topbar {
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@ body {
   margin-right: 15px;
 }
 
-/* HERO IMAGE */
+/* ================= HERO IMAGE ================= */
 .hero {
   height: 420px;
   background: url("hero-bg.jpg") center/cover no-repeat;
@@ -35,7 +35,7 @@ body {
   top: 50%;
   left: 60px;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   padding: 30px;
   max-width: 600px;
   color: white;
@@ -46,7 +46,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* THREE COLUMN SECTION */
+/* ================= THREE COLUMN SECTION ================= */
 .three-cols {
   display: flex;
   justify-content: center;
@@ -65,28 +65,90 @@ body {
   margin-bottom: 15px;
 }
 
-/* BUTTONS */
+/* ================= CONTAINER ================= */
+.container {
+  background: white;
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+/* ================= PRODUCTS ================= */
+.product {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* PRODUCT IMAGES */
+.product img {
+  width: 60%;              /* 🔧 change size here */
+  max-width: 420px;
+  height: auto;
+  margin: 15px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* MULTIPLE IMAGES (Oil robot images spacing) */
+.product img + img {
+  margin-top: 10px;
+}
+
+/* PRODUCT VIDEOS */
+.product video {
+  width: 65%;
+  max-width: 500px;
+  margin: 15px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ================= BUTTONS ================= */
 .nav-buttons {
   text-align: center;
   margin: 40px;
 }
 
-.next, .back {
+.next,
+.back {
   background: #004080;
   color: white;
   padding: 10px 22px;
   text-decoration: none;
   border-radius: 4px;
+  margin: 10px;
+  display: inline-block;
 }
 
-.next:hover, .back:hover {
+.next:hover,
+.back:hover {
   background: #002f5f;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
   background: #222;
   color: #ccc;
   text-align: center;
   padding: 15px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .three-cols {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-box {
+    left: 20px;
+    right: 20px;
+  }
+
+  .product img,
+  .product video {
+    width: 95%;
+    max-width: 100%;
+  }
 }
