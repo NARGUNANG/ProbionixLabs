@@ -70,20 +70,20 @@ body {
   background: white;
   margin: 30px auto;
   padding: 30px;
-  max-width: 900px;
+  max-width: 800px;
   border-radius: 10px;
 }
 
 /* ================= PRODUCTS ================= */
 .product {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
 }
 
 /* PRODUCT IMAGES */
 .product img {
-  width: 60%;              /* 🔧 change size here */
-  max-width: 420px;
+  width: 40%;              /* 🔧 change size here */
+  max-width: 400px;
   height: auto;
   margin: 15px auto;
   display: block;
@@ -97,8 +97,8 @@ body {
 
 /* PRODUCT VIDEOS */
 .product video {
-  width: 65%;
-  max-width: 500px;
+  width: 45%;
+  max-width: 400px;
   margin: 15px auto;
   display: block;
   border-radius: 8px;
@@ -152,3 +152,4 @@ footer {
     max-width: 100%;
   }
 }
+
