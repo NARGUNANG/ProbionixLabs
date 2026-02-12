@@ -2,43 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Page 3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Probionix Labs – Contact</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: url("images/background.jpg") no-repeat center center/cover;
+      position: relative;
+      color: white;
+    }
+
+    /* Dark overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    /* ================= NAVBAR ================= */
+    .navbar {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li {
+      display: inline;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00c3ff;
+    }
+
+    /* ================= CONTENT ================= */
+    .content {
+      position: relative;
+      z-index: 2;
+      height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 18px;
+      max-width: 600px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      background: #00c3ff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #009acd;
+    }
+
+  </style>
 </head>
+
 <body>
 
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="logo">MY WEBSITE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page2.html">Page 2</a></li>
+      <li><a href="page3.html">Page 3</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-<header class="topbar">
-  <img src="logo1.png" class="logo">
-  <h1>PROBIONIX LABS</h1>
-</header>
-
-<div class="container">
-  <h2>Contact Us</h2>
-  <p>
-    <strong>Directors:</strong> Dr. G. Prabhakar & Mr. P. Ajith Pandi<br><br>
-    New No. 28, Old No. 46, Thazhlai Veethi, Anbunagar, Anna Nagar (Madurai),<br>
-    Madurai North – 625020, Tamil Nadu, India
-  </p>
-
-  <p>
-    <strong>Email:</strong> probionixlabs@gmail.com<br>
-    <strong>Website:</strong>
-    <a href="https://www.probionixlabs.com" target="_blank">
-      www.probionixlabs.com
-    </a>
-  </p>
-</div>
-
-<div class="nav-buttons">
-  <a href="page2.html" class="back">← Back</a>
-</div>
-
-<footer>
-  © 2025 Probionix Labs Pvt. Ltd.
-</footer>
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <h1>Welcome to Page 3</h1>
+    <p>
+      This page includes a full-screen background image, 
+      dark overlay effect, and a top navigation bar layout 
+      similar to your design.
+    </p>
+    <button class="btn">Learn More</button>
+  </div>
 
 </body>
 </html>
-
