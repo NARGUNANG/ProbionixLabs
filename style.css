@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #f4f4f4;
+  background: #f2f2f2;
 }
 
 /* ================= NAVBAR ================= */
@@ -17,17 +17,22 @@ body {
   align-items: center;
   padding: 18px 60px;
   background: white;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
 }
 
-.logo-area {
+.logo-section {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.logo-area img {
+.logo-section img {
   width: 45px;
+}
+
+.logo-section span {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .navbar nav a {
@@ -49,32 +54,41 @@ body {
 /* ================= HERO ================= */
 .hero {
   height: 520px;
-  background: url("hero-bg.jpg") no-repeat center center/cover;
+  background: url("tech-bg.jpg") no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.55);
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 40, 90, 0.65);
+}
+
+.hero-content {
+  position: relative;
   color: white;
   padding: 40px;
   margin-left: 80px;
   max-width: 600px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.hero-overlay h1 {
-  font-size: 40px;
+.hero-content h1 {
+  font-size: 38px;
   margin-bottom: 15px;
 }
 
-.hero-overlay p {
+.hero-content p {
   font-size: 18px;
   line-height: 1.6;
 }
 
-/* ================= FEATURES ================= */
-.features {
+/* ================= ICON SECTION ================= */
+.icon-section {
   display: flex;
   justify-content: space-around;
   padding: 70px 50px;
@@ -82,17 +96,17 @@ body {
   text-align: center;
 }
 
-.feature-box {
+.icon-box {
   width: 250px;
   padding: 20px;
   transition: 0.3s;
 }
 
-.feature-box:hover {
+.icon-box:hover {
   transform: translateY(-10px);
 }
 
-.icon {
+.big-icon {
   font-size: 60px;
   margin-bottom: 15px;
 }
@@ -101,19 +115,19 @@ body {
 footer {
   text-align: center;
   padding: 15px;
-  background: #222;
-  color: #ccc;
+  background: #111;
+  color: #aaa;
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
-  .features {
+  .icon-section {
     flex-direction: column;
     gap: 30px;
   }
 
-  .hero-overlay {
+  .hero-content {
     margin: 20px;
   }
 
