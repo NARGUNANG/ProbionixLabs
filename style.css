@@ -29,11 +29,28 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 60px;
+  padding: 20px 80px;
   background: white;
-  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
 }
 
+.navbar span {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #1d1d1f;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar nav a:hover {
+  opacity: 0.6;
+}
 .logo-section {
   display: flex;
   align-items: center;
@@ -154,5 +171,6 @@ footer {
     margin: 10px;
   }
 }
+
 
 
