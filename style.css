@@ -15,6 +15,13 @@ body {
   background-repeat: no-repeat;  /* prevents repeating */
   background-attachment: fixed;  /* optional: fixed background */
 }
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1d1d1f;
+  background-color: #ffffff;
+}
 
 
 /* ================= NAVBAR ================= */
@@ -147,4 +154,5 @@ footer {
     margin: 10px;
   }
 }
+
 
