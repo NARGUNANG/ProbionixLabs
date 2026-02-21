@@ -84,64 +84,42 @@ body {
 
 /* ================= HERO ================= */
 .hero {
-  height: 520px;
-  background: url("tech-bg.jpg") no-repeat center center/cover;
-  position: relative;
+  height: 90vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 40, 90, 0.65);
-}
-
-.hero-content {
-  position: relative;
-  color: white;
-  padding: 40px;
-  margin-left: 80px;
-  max-width: 600px;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.hero-content h1 {
-  font-size: 38px;
-  margin-bottom: 15px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* ================= ICON SECTION ================= */
-.icon-section {
-  display: flex;
-  justify-content: space-around;
-  padding: 70px 50px;
-  background: white;
   text-align: center;
+  padding: 0 20px;
 }
 
-.icon-box {
-  width: 250px;
-  padding: 20px;
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #6e6e73;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #1d1d1f;
+  color: #1d1d1f;
   transition: 0.3s;
 }
 
-.icon-box:hover {
-  transform: translateY(-10px);
+.btn:hover {
+  background: #1d1d1f;
+  color: white;
 }
-
-.big-icon {
-  font-size: 60px;
-  margin-bottom: 15px;
-}
-
 /* ================= FOOTER ================= */
 footer {
   text-align: center;
@@ -171,6 +149,7 @@ footer {
     margin: 10px;
   }
 }
+
 
 
 
