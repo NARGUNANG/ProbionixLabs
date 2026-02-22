@@ -51,6 +51,15 @@ function runCounter() {
 
       updateCounter();
     });
+
+    // Parallax effect for robot image
+const heroImage = document.querySelector(".hero-image img");
+
+window.addEventListener("scroll", () => {
+  const scrollValue = window.scrollY;
+  heroImage.style.transform =
+    `translateY(${scrollValue * 0.2}px)`;
+});
   }
 }
 
