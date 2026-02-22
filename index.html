@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>Probionix Labs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Probionix Labs</title>
 
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<!-- ================= TOP NAVIGATION ================= -->
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
-  <div class="logo-section">
-    <img src="logo1.png" alt="Logo">
-    <span>PROBIONIX LABS</span>
-  </div>
+  <div class="container nav-container">
+    <div class="logo">
+      <img src="logo1.png" alt="Logo">
+      <span>PROBIONIX LABS</span>
+    </div>
 
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="page2.html">Products</a>
-    <a href="page3.html">Contact</a>
-  </nav>
+    <nav id="nav-menu">
+      <a href="#" class="active">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+  </div>
 </header>
 
 <!-- ================= HERO SECTION ================= -->
 <section class="hero">
-  <div class="hero-content">
+  <div class="container hero-content">
     <h1>Robotic Intelligence. Human Precision.</h1>
     <p>
       Advanced prosthetic systems and intelligent robotics engineered 
       for the next generation of biomedical innovation.
     </p>
-    <a href="page2.html" class="btn">Explore Technology</a>
+    <button class="primary-btn">Explore Technology</button>
   </div>
 </section>
 
-<!-- ================= ICON SECTION ================= -->
+<!-- ================= FEATURES ================= -->
 <section class="features">
-  <div class="feature-card">
-    <h3>Smart Prosthetics</h3>
-    <p>Adaptive biomechanical systems powered by embedded intelligence.</p>
-  </div>
+  <div class="container feature-grid">
 
-  <div class="feature-card">
-    <h3>AI Robotics</h3>
-    <p>Precision robotic platforms for medical and assistive applications.</p>
-  </div>
+    <div class="feature-card reveal">
+      <h3>Smart Prosthetics</h3>
+      <p>Adaptive biomechanical systems powered by embedded intelligence.</p>
+    </div>
 
-  <div class="feature-card">
-    <h3>Embedded Systems</h3>
-    <p>High-performance microcontroller and sensor integration.</p>
+    <div class="feature-card reveal">
+      <h3>AI Robotics</h3>
+      <p>Precision robotic platforms for medical and assistive applications.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <h3>Embedded Systems</h3>
+      <p>High-performance microcontroller and sensor integration.</p>
+    </div>
+
   </div>
 </section>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-  © 2025 Probionix Labs Pvt. Ltd.
+  <div class="container">
+    © 2026 Probionix Labs Pvt. Ltd. All Rights Reserved.
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
