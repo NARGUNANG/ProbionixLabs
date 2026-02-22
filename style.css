@@ -107,6 +107,44 @@ nav a.active {
 .primary-btn:hover {
   background: white;
 }
+
+/* ================= STATS SECTION ================= */
+.stats {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0ea5e9, #1e293b);
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  transition: 0.4s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.stat-card h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #e2e8f0;
+  font-weight: 500;
+}
 /* ================= FOOTER ================= */
 
 
@@ -199,6 +237,7 @@ footer {
   background: #0f172a;
   color: #94a3b8;
 }
+
 
 
 
