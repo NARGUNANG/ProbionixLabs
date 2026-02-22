@@ -18,6 +18,10 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+.logo img {
+    height: 40px;
+    width: auto;
+}
 
 /* ================= NAVBAR ================= */
 .navbar {
@@ -309,6 +313,7 @@ footer {
   background: #0f172a;
   color: #94a3b8;
 }
+
 
 
 
