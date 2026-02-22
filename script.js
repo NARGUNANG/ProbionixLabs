@@ -22,3 +22,36 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// Counter Animation
+const counters = document.querySelectorAll('.counter');
+let counterStarted = false;
+
+function runCounter() {
+  const statsSection = document.querySelector('.stats');
+  const sectionTop = statsSection.getBoundingClientRect().top;
+  const screenHeight = window.innerHeight;
+
+  if (!counterStarted && sectionTop < screenHeight - 100) {
+    counters.forEach(counter => {
+      counterStarted = true;
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+      const increment = target / 100;
+
+      const updateCounter = () => {
+        if (count < target) {
+          count += increment;
+          counter.innerText = Math.ceil(count);
+          setTimeout(updateCounter, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCounter();
+    });
+  }
+}
+
+window.addEventListener('scroll', runCounter);
