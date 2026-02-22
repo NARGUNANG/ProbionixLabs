@@ -76,20 +76,38 @@ nav a.active {
 
 
 /* ================= HERO ================= */
-/* ================= SPLIT HERO ================= */
+/* ================= CYBER SPLIT HERO ================= */
 .hero {
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
-  background: #0f172a;
+  background: radial-gradient(circle at 20% 50%, #0ea5e9 0%, #0f172a 40%);
+  overflow: hidden;
   padding-top: 80px;
 }
 
+/* Cyber glowing background effect */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #0ea5e9;
+  filter: blur(180px);
+  opacity: 0.25;
+  top: -100px;
+  right: -150px;
+  z-index: 0;
+}
+
 .hero-wrapper {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 60px;
 }
 
 /* LEFT SIDE */
@@ -98,14 +116,17 @@ nav a.active {
 }
 
 .hero-text h1 {
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 800;
   margin-bottom: 20px;
+  background: linear-gradient(90deg, #ffffff, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-text p {
   color: #cbd5e1;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 30px;
   max-width: 500px;
 }
@@ -115,12 +136,35 @@ nav a.active {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
+/* Gradient glow behind robot */
+.hero-image::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, #38bdf8 0%, transparent 70%);
+  z-index: 0;
+  filter: blur(60px);
+  opacity: 0.6;
+}
+
+/* Robot image */
 .hero-image img {
   width: 100%;
   max-width: 500px;
-  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+  animation: floatRobot 4s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes floatRobot {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
 /* ================= STATS SECTION ================= */
 .stats {
@@ -244,7 +288,7 @@ nav a.active {
   }
 
   .hero-text h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 }
 footer {
@@ -265,6 +309,7 @@ footer {
   background: #0f172a;
   color: #94a3b8;
 }
+
 
 
 
