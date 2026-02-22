@@ -179,15 +179,6 @@ nav a.active {
     align-items: center;
 }
 
-.hero {
-    height: 100vh;
-    background:
-        linear-gradient(to right, rgba(0,0,0,0.85) 40%, rgba(0,0,0,0.3)),
-        url("robotbg.jpg");
-
-    background-size: cover;
-    background-position: center;
-}
 
 /* Floating animation */
 @keyframes floatRobot {
@@ -338,6 +329,7 @@ footer {
   background: #0f172a;
   color: #94a3b8;
 }
+
 
 
 
