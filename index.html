@@ -1,287 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Probionix Labs — Robotic Intelligence. Human Precision.</title>
-  <meta name="description" content="Advanced prosthetic systems and intelligent robotics engineered for the next generation of biomedical innovation.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Probionix Labs</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<canvas id="particles-canvas"></canvas>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <img src="logo1.jpg" alt="Logo">
+      <span>PROBIONIX LABS</span>
+    </div>
 
-<!-- ═══════════ NAVBAR ═══════════ -->
-<header class="navbar" id="navbar">
-  <div class="container">
-    <div class="nav-wrap">
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">
-          <div class="nav-logo-icon-ring"></div>
-          <div class="nav-logo-icon-core">PX</div>
-        </div>
-        <div class="nav-logo-name">
-          <span class="nav-logo-main">Probionix Labs</span>
-          <span class="nav-logo-sub">Biomedical · Robotics</span>
-        </div>
-      </a>
+    <nav id="nav-menu">
+      <a href="#" class="active">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
 
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="active"><span>Home</span></a>
-        <a href="page2.html"><span>Products</span></a>
-        <a href="page3.html"><span>Contact</span></a>
-        <a href="page3.html" class="nav-cta-btn"><span>Get in Touch</span></a>
-      </nav>
-
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
     </div>
   </div>
 </header>
 
-<!-- Mobile nav -->
-<div class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a>
-  <a href="page2.html">Products</a>
-  <a href="page3.html">Contact</a>
-</div>
-
-<!-- ═══════════ HERO ═══════════ -->
+<!-- ================= HERO SECTION ================= -->
 <section class="hero">
-  <div class="hero-bg">
-    <div class="hero-bg-gradient"></div>
-    <div class="hero-bg-grid"></div>
-    <div class="orb orb1"></div>
-    <div class="orb orb2"></div>
-    <div class="orb orb3"></div>
-  </div>
+  <div class="container hero-wrapper">
 
-  <div class="container">
-    <div class="hero-container">
-
-      <!-- LEFT -->
-      <div class="hero-left">
-        <div class="hero-eyebrow">
-          <span class="eyebrow-dot"></span>
-          <span class="eyebrow-text">Next-Gen Biomedical Tech — Madurai</span>
-        </div>
-
-        <h1 class="hero-title">
-          <span class="line1">ROBOTIC</span><br>
-          <span class="line2">INTELLIGENCE.</span><br>
-          <span class="line3">HUMAN PRECISION.</span>
-        </h1>
-
-        <p class="hero-desc">
-          Advanced prosthetic systems and intelligent robotics engineered
-          for the next generation of biomedical innovation — where embedded
-          intelligence meets human biology.
-        </p>
-
-        <div class="hero-actions">
-          <a href="page2.html" class="btn-glow">
-            Explore Products
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="page3.html" class="btn-ghost">
-            Contact Us
-          </a>
-        </div>
-      </div>
-
-      <!-- RIGHT — Orb visualizer -->
-      <div class="hero-right">
-        <div class="hero-orb-wrapper">
-          <div class="orb-ring orb-ring-1"></div>
-          <div class="orb-ring orb-ring-2"></div>
-          <div class="orb-ring orb-ring-3"></div>
-          <div class="orb-core">
-            <span class="orb-core-icon">🦾</span>
-            <span class="orb-core-label">BIO · AI · MECH</span>
-          </div>
-          <!-- Data chips -->
-          <div class="float-card fc1">
-            <div class="float-card-icon c-cyan">⚡</div>
-            <div class="float-card-text">
-              <span class="fct-val">98%</span>
-              <span class="fct-lbl">Clinical Precision</span>
-            </div>
-          </div>
-          <div class="float-card fc2">
-            <div class="float-card-icon c-violet">🧬</div>
-            <div class="float-card-text">
-              <span class="fct-val">EMG</span>
-              <span class="fct-lbl">Signal Driven</span>
-            </div>
-          </div>
-          <div class="float-card fc3">
-            <div class="float-card-icon c-green">📋</div>
-            <div class="float-card-text">
-              <span class="fct-val">12</span>
-              <span class="fct-lbl">Patents Filed</span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- LEFT SIDE -->
+    <div class="hero-text">
+      <h1>Robotic Intelligence. Human Precision.</h1>
+      <p>
+        Advanced prosthetic systems and intelligent robotics engineered 
+        for the next generation of biomedical innovation.
+      </p>
+      <button class="primary-btn">Explore Technology</button>
     </div>
-  </div>
 
-  <!-- Scroll cue -->
-  <div class="hero-scroll-cue">
-    <div class="scroll-mouse">
-      <div class="scroll-wheel"></div>
-    </div>
-    <span class="scroll-text2">Scroll</span>
   </div>
 </section>
 
-<!-- ═══════════ TICKER ═══════════ -->
-<div class="ticker">
-  <div class="ticker-inner" id="tickerInner">
-    <div class="ticker-item"><span class="ticker-num">120</span><span class="ticker-label">Prototypes Built</span></div>
-    <div class="ticker-item"><span class="ticker-num">45</span><span class="ticker-label">Research Collaborations</span></div>
-    <div class="ticker-item"><span class="ticker-num">98%</span><span class="ticker-label">Clinical Precision</span></div>
-    <div class="ticker-item"><span class="ticker-num">12</span><span class="ticker-label">Patents Filed</span></div>
-    <div class="ticker-item"><span class="ticker-num">3</span><span class="ticker-label">Core Products</span></div>
-    <div class="ticker-item"><span class="ticker-num">2026</span><span class="ticker-label">Future Ready</span></div>
-    <!-- Duplicate for seamless loop -->
-    <div class="ticker-item"><span class="ticker-num">120</span><span class="ticker-label">Prototypes Built</span></div>
-    <div class="ticker-item"><span class="ticker-num">45</span><span class="ticker-label">Research Collaborations</span></div>
-    <div class="ticker-item"><span class="ticker-num">98%</span><span class="ticker-label">Clinical Precision</span></div>
-    <div class="ticker-item"><span class="ticker-num">12</span><span class="ticker-label">Patents Filed</span></div>
-    <div class="ticker-item"><span class="ticker-num">3</span><span class="ticker-label">Core Products</span></div>
-    <div class="ticker-item"><span class="ticker-num">2026</span><span class="ticker-label">Future Ready</span></div>
-  </div>
-</div>
+  <!-- ================= STATS SECTION ================= -->
+<section class="stats">
+  <div class="container stats-grid">
 
-<!-- ═══════════ STATS ═══════════ -->
-<section class="stats-section">
-  <div class="stats-bg-glow"></div>
-  <div class="container">
-    <div class="stats-grid4">
-      <div class="stat-block">
-        <div class="stat-block-glow"></div>
-        <div class="stat-num"><span class="counter" data-target="120">0</span><span class="suf">+</span></div>
-        <div class="stat-desc">Advanced Prototypes</div>
-      </div>
-      <div class="stat-block">
-        <div class="stat-block-glow"></div>
-        <div class="stat-num"><span class="counter" data-target="45">0</span><span class="suf">+</span></div>
-        <div class="stat-desc">Research Partners</div>
-      </div>
-      <div class="stat-block">
-        <div class="stat-block-glow"></div>
-        <div class="stat-num"><span class="counter" data-target="98">0</span><span class="suf">%</span></div>
-        <div class="stat-desc">Clinical Precision</div>
-      </div>
-      <div class="stat-block">
-        <div class="stat-block-glow"></div>
-        <div class="stat-num"><span class="counter" data-target="12">0</span></div>
-        <div class="stat-desc">Patents Filed</div>
-      </div>
+    <div class="stat-card">
+      <h2 class="counter" data-target="120">0</h2>
+      <p>Advanced Prototypes Built</p>
     </div>
+
+    <div class="stat-card">
+      <h2 class="counter" data-target="45">0</h2>
+      <p>Research Collaborations</p>
+    </div>
+
+    <div class="stat-card">
+      <h2 class="counter" data-target="98">0</h2>
+      <p>Clinical Precision (%)</p>
+    </div>
+
+    <div class="stat-card">
+      <h2 class="counter" data-target="12">0</h2>
+      <p>Patents Filed</p>
+    </div>
+
   </div>
 </section>
 
-<!-- ═══════════ CAPABILITIES ═══════════ -->
-<section class="capabilities">
-  <div class="cap-bg-line"></div>
-  <div class="container">
-    <div class="sec-head-center">
-      <span class="sec-eyebrow">Core Capabilities</span>
-      <h2 class="sec-title">Engineering the<br>Frontiers of Biology</h2>
-      <p class="sec-desc">Three pillars driving our research and product development — where hardware meets intelligence.</p>
+<!-- ================= FEATURES ================= -->
+<section class="features">
+  <div class="container feature-grid">
+
+    <div class="feature-card reveal">
+      <h3>Smart Prosthetics</h3>
+      <p>Adaptive biomechanical systems powered by embedded intelligence.</p>
     </div>
 
-    <div class="cap-grid">
-      <div class="cap-card c1 reveal">
-        <div class="cap-card-line"></div>
-        <div class="cap-card-glow"></div>
-        <div class="cap-num">01 /</div>
-        <div class="cap-icon">🦿</div>
-        <div class="cap-title">Smart Prosthetics</div>
-        <p class="cap-text">Adaptive biomechanical systems powered by EMG signal processing and embedded AI. Designed to restore natural human movement with clinical-grade precision and everyday reliability.</p>
-        <div class="cap-tags">
-          <span class="cap-tag">EMG</span>
-          <span class="cap-tag">Pneumatics</span>
-          <span class="cap-tag">3D Print</span>
-          <span class="cap-tag">Adaptive</span>
-        </div>
-      </div>
-
-      <div class="cap-card c2 reveal">
-        <div class="cap-card-line"></div>
-        <div class="cap-card-glow"></div>
-        <div class="cap-num">02 /</div>
-        <div class="cap-icon">🤖</div>
-        <div class="cap-title">AI Robotics</div>
-        <p class="cap-text">Precision robotic platforms for medical, assistive, and environmental applications. From oil-spill remediation to autonomous assistive devices built for real-world deployment.</p>
-        <div class="cap-tags">
-          <span class="cap-tag">Autonomous</span>
-          <span class="cap-tag">UV + IR Sensors</span>
-          <span class="cap-tag">Navigation</span>
-        </div>
-      </div>
-
-      <div class="cap-card c3 reveal">
-        <div class="cap-card-line"></div>
-        <div class="cap-card-glow"></div>
-        <div class="cap-num">03 /</div>
-        <div class="cap-icon">⚡</div>
-        <div class="cap-title">Embedded Systems</div>
-        <p class="cap-text">High-performance microcontroller architectures with real-time sensor fusion — enabling intelligent closed-loop response at the hardware level for prosthetic and robotic systems.</p>
-        <div class="cap-tags">
-          <span class="cap-tag">MCU</span>
-          <span class="cap-tag">Real-Time</span>
-          <span class="cap-tag">Sensor Fusion</span>
-          <span class="cap-tag">IoT</span>
-        </div>
-      </div>
+    <div class="feature-card reveal">
+      <h3>AI Robotics</h3>
+      <p>Precision robotic platforms for medical and assistive applications.</p>
     </div>
+
+    <div class="feature-card reveal">
+      <h3>Embedded Systems</h3>
+      <p>High-performance microcontroller and sensor integration.</p>
+    </div>
+
   </div>
 </section>
 
-<!-- ═══════════ FOOTER ═══════════ -->
+<!-- ================= FOOTER ================= -->
 <footer>
   <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo" style="margin-bottom:0;">
-          <div class="nav-logo-icon">
-            <div class="nav-logo-icon-ring"></div>
-            <div class="nav-logo-icon-core">PX</div>
-          </div>
-          <div class="nav-logo-name">
-            <span class="nav-logo-main">Probionix Labs</span>
-            <span class="nav-logo-sub">Biomedical · Robotics</span>
-          </div>
-        </a>
-        <p>Advanced prosthetic systems and intelligent robotics engineered for the next generation of biomedical innovation. Based in Madurai, Tamil Nadu, India.</p>
-      </div>
-
-      <div class="footer-col">
-        <h5>Navigate</h5>
-        <a href="index.html">Home</a>
-        <a href="page2.html">Products</a>
-        <a href="page3.html">Contact</a>
-      </div>
-
-      <div class="footer-col">
-        <h5>Products</h5>
-        <a href="page2.html">SS-SPA Actuator</a>
-        <a href="page2.html">EMG Prosthetic Leg</a>
-        <a href="page2.html">Water Surface Robot</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Probionix Labs Pvt. Ltd. — All Rights Reserved.</p>
-      <div class="footer-status">
-        <span class="status-dot"></span>
-        Systems Online
-      </div>
-    </div>
+    © 2026 Probionix Labs Pvt. Ltd. All Rights Reserved.
   </div>
 </footer>
 
